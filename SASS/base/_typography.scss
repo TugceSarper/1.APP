@@ -1,0 +1,53 @@
+
+//TYPOGRAPHY//
+
+h1,h2,h3,h4{
+    font-weight: 400;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+}
+
+h1{
+    font-family:$title1_font;
+    font-size:5rem;
+    color: $title_color1;
+}
+h2{
+    font-family:$title2_font;
+    font-size:4rem;
+}
+h3{
+    font-family:$title2_font;
+    font-size:2.5rem;
+}
+
+
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:$title1_font ;
+    color:$title_color1 ;
+    font-size: 2rem;
+}
+
+p{
+    font-family:$text-font;
+    font-size:1.5rem;
+    color:rgba($text_color, .8);
+    line-height: 3rem;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+ 

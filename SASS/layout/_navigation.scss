@@ -1,0 +1,87 @@
+//NAV-HEADER//
+
+.main-header{
+    position: relative;
+    
+    
+    .container{
+        .nav-header{
+            @include flex_display(flex,center,space-between);
+            .logo{
+                @include flex_display(flex,center,space-between);
+
+                i{
+                    font-size: 4rem;
+                    color:$secondary-color;
+                }
+
+                h1{
+
+                    span{
+                        font-size: 4rem;
+                        color:$secondary-color;
+                        font-family: $spf;
+                    }
+                }
+            }
+
+           .navbar{
+               position: relative;
+               .navbar-list{
+                    @include flex_display(flex,center,space-between);
+
+                    li{
+                        margin: 0 1rem;
+                        padding: 1rem;
+                        border: 1px solid transparent;
+                        border-radius: 3rem;
+                        background: -moz-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -webkit-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -o-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -ms-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+
+                        .dropdown{
+                            @include flex_display(flex,center,space-between);
+                            position: absolute;
+                            right:100%;
+                            top: 0;
+                            z-index: 10;
+                            transition: $general-transition;
+                            opacity: 1;
+                            visibility: hidden;
+                            flex-direction: column;
+                        
+                            li{
+                                width: 20rem;
+                                text-align: center;
+                            }
+                        }
+
+                        &:hover{
+        
+                            & .dropdown{
+                                opacity: 1;
+                                visibility: visible;
+                                transition: $general-transition;
+                                flex-direction: column;
+                                right: 23rem;
+                    
+    
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    } 
+
+    .nav-bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -54464;
+    }
+}

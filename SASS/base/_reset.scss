@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	direction: ltr;
+	overflow-x: hidden;
+  overflow-y: scroll;
+  font-size : 62.5%; //1 rem = 10px; 10px/16px = 62.5%   
+
+
+  @include maxw(2615) {
+    font-size: 90%;
+  }
+
+  @include maxw(1834) {
+    font-size: 75%;
+  }
+
+  @include maxw(1530) {
+      font-size: 65%;
+  }
+
+  @include maxw(1330) {
+    font-size: 60%;
+  }
+
+  @include maxw(1229) {
+    font-size: 45%;
+  }
+  @include maxw(924) {
+    font-size: 35%;
+  }
+  @include maxw(724) {
+    font-size: 25%;
+  }
+
+  @include maxw(524) {
+    font-size: 15%;
+  }
+
+  @include maxw(319) {
+    font-size: 10%;
+  }
+  
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+    font-style: normal;
+    font-variant:normal;
+    text-decoration:none;
+    font-weight: normal;
+    line-height:normal;
+}
+
+main{
+    overflow:hidden;
+}
+
+.container{
+  width:70%;
+  margin: 0 auto;
+  
+ 
+}
+
+section{
+    padding: 8rem 0;
+
+    @include media(medium){
+         padding: 6rem 0;
+        }
+
+    
+}
+
+

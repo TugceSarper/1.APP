@@ -1,0 +1,131 @@
+//FOOTER//
+
+.footer{
+	background: -moz-linear-gradient(to top,rgba($bg1, .9), rgba($bg1, .9)), url(../img/bg2.jpg);
+    background: -webkit-linear-gradient(to top,rgba($bg1, .9), rgba($bg1, .9)), url(../img/bg2.jpg);
+    background: -o-linear-gradient(to top,rgba($bg1, .9), rgba($bg1, .9)), url(../img/bg2.jpg);
+    background: -ms-linear-gradient(to top,rgba($bg1, .9), rgba($bg1, .9)), url(../img/bg2.jpg);
+    background: linear-gradient(to top,rgba($bg1, .9), rgba($bg1, .9)), url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+	position: relative;
+	color: $bg2;
+	p{
+		color: $bg2;
+	}
+
+	
+
+	.container{
+		display: grid;
+        grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+		
+		.ouradress{
+			i{
+				font-size: 2rem;
+				color: $secondary-color;
+				padding-right: 2rem;
+
+				&:hover{
+					color: rgba($secondary-color, .5);
+				}
+			}
+		}
+	}
+}
+
+.title{
+	border-left: 2px solid $secondary-color;
+	padding-left: 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+.form {
+
+	&__group {
+	  &:not(:last-child) {
+		margin-bottom : 1rem;
+		}
+	  }
+  
+	&__input {
+	  display          : block;
+	  width            : 100%;
+	  padding          : 1rem 1.5rem;
+	  background-color : rgba($secondary-color, .5);
+	  border           : none;
+	  border-bottom    : 2px solid transparent;
+	  border-radius    : 3px;
+	  color            : inherit;
+	  font-family      : inherit;
+	  font-size        : 1.6rem;
+	  transition       : all .2s;
+  
+	  &:focus {
+		outline             : none;
+		border-bottom-color : rgba($primary-color, .9);
+		}
+  
+	  &:not(:placeholder-shown):invalid {
+		border-bottom-color :rgba($bg1, .9);
+  
+		}
+  
+  
+	  &::-webkit-input-placeholder {
+		color :rgba($primary-color, .9);
+		}
+	  }
+  
+	&__label {
+	  display : none;
+	  }
+  
+	&__btn {
+	  padding          : 1rem 1.5rem;
+	  color :rgba($secondary-color, 1);
+	  font-family      : inherit;
+	  font-size        : 1.6rem;
+	  background-color :rgba($primary-color, .5);
+	  border           : none;
+	  border-radius    : 3px;
+	  transition       : all .2s;
+  
+	  &:focus,
+	  &:hover {
+		outline          : none;
+		background-color :rgba($secondary-color, .5);
+		color :rgba($primary-color, 1);
+  
+		}
+  
+	  }
+  
+	}
+  
+  
+  .end {
+	
+	margin-top  : 1rem;
+	margin-bottom: 0;
+	text-align: center;
+  
+	
+  
+	&__link {
+	  color       : inherit;
+	  font-size   : inherit;
+	  font-family : inherit;
+	  transition  : all .3s;
+	}
+}

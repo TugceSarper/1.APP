@@ -1,0 +1,191 @@
+//ABOUTUS SECTION1//
+.aboutus1{
+    .container{
+        width: 70%;
+        border-bottom: 1px solid rgba($text_color, .4);
+        @include flex_display(flex,center,space-between);
+
+       
+    
+        .aboutus-content{
+          
+
+            h3{
+                border-left: 1px solid $secondary_color;
+                color: $title_color2;
+                padding-left: 1rem;
+
+                span{
+                    color: rgba($text_color, .9);
+                }
+            }
+
+            .aboutus-list{
+                
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 2rem;
+
+                @include media(large) {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-gap: 2rem;
+                  }
+
+                li a{
+                    color:rgba($text_color, .8);
+                    font-size: 1.5rem;
+                    i{
+                       color: $secondary_color;
+                       font-size: 1.5rem;
+                    }
+                }
+            }
+
+        }
+        .aboutus-img{
+            width: 40%;
+            position: relative;
+            transform: translate(5vh , 0vh); 
+            
+            
+
+            @include media(xlarge) {
+                transform: translate(0 , 0); 
+            }
+        }
+    }
+}
+
+
+//ABOUTUS SECTION2//
+
+.aboutus2{
+    .container{
+        .aboutus2-content{
+            @include flex_display(flex,center,space-between);
+            text-align: center;
+            li{
+                i{
+                    width: 10rem;
+                    height: 10rem;
+                    color: $secondary_color;
+                    border: 1px solid rgba($text_color, .4);
+                    border-radius: 50%;
+                    font-size: 3rem;
+                    padding: 3rem;
+                    transition: $general-transition;
+                    text-align: center;
+                    vertical-align: center;
+
+                    &:hover{
+                        background-color: $secondary_color;
+                        color:$text-color;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+//ABOUTUS SECTION3//
+.aboutus3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .container{
+        display               : grid;
+        grid-template-columns : repeat(3, 1fr);
+        
+        .aboutus3-img{
+            width: 100%;
+            height: 100%;
+        }
+        .aboutus3-content{
+            
+            .aboutus3-list{
+                
+                li{
+                    @include flex_display(flex,center,space-between);
+                   
+                    @include media(small){
+                        padding-top: 1rem;
+                        
+                    }
+
+                    i{
+                      
+                        color: $secondary_color;
+                        background-color: $bg2;
+                        border: 1px solid rgba($text_color, .4);
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        padding: 3rem;
+                        transition: $general-transition;
+                        text-align: center;
+
+                        &:hover{
+                            background: -moz-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                            background: -webkit-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                            background: -o-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                            background: -ms-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                            background: linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                            color:$text-color;
+                        }
+
+
+                    }
+                    .i1{
+                        color: $text_color;
+                        background: -moz-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -webkit-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -o-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: -ms-linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        background: linear-gradient(to top,rgba($primary-color, 1), rgba($secondary-color, 1));
+                        border: 1px solid rgba($secondary_color, .4);
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        padding: 3rem;
+                        transition: $general-transition;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+        .aboutus3-slayt{
+           
+            width: 100%;
+          
+            p{
+                border-left: 1px solid rgba($text_color, .4);
+                padding-left: 2rem;
+            }
+
+            .button1{
+                background-color: $bg2;
+                border: 0px solid transparent;
+                border-radius: 50%;
+                color: $text_color;
+                padding: .4rem;
+                position: relative;
+                top: 17rem;
+                left: -1rem;
+            }
+            .button2{
+                background-color: $bg2;
+                border: 0px solid transparent;
+                border-radius: 50%;
+                color: $text_color;
+                padding: .4rem;
+                position: relative;
+                top: 3rem;
+                left: -1rem;
+            }
+        }
+    }
+} 

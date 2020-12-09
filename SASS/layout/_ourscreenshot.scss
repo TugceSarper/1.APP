@@ -1,0 +1,27 @@
+//OURSCREENSHOT//
+.ourscreenshot{
+   
+    padding: 5rem 0 10rem 0;
+
+    .container{
+        h3{
+            border-left: 1px solid $secondary_color;
+            color: $title_color2;
+            padding-left: 1rem;
+            
+            span{
+                color: rgba($text_color, .9);
+            }
+        }
+    }
+    .shots__content{
+        display               : grid;
+	    grid-template-columns : repeat(5, 1fr);
+        grid-column-gap: 3rem;
+        
+
+        &__img {
+            width : 100%;
+        }
+    }   
+}

@@ -1,0 +1,92 @@
+//media queries with width
+@mixin maxw($breakpoint) {
+    @media only screen and (max-width: ($breakpoint / 16) * 1em) {
+      @content;
+    }
+  }
+  
+  @mixin minw($breakpoint) {
+    @media only screen and (min-width: ($breakpoint / 16) * 1em) {
+      @content;
+    }
+  }
+  
+  @mixin maxminw($breakpoint1, $breakpoint2) {
+    @media only screen and (max-width: ($breakpoint2 / 16) * 1em) and (min-width: ($breakpoint1 / 16) * 1em) {
+      @content;
+    }
+  }
+  
+  //media queries with height
+  @mixin maxh($breakpoint) {
+    @media only screen and (max-height: ($breakpoint / 16) * 1em) {
+      @content;
+    }
+  }
+  
+  @mixin minh($breakpoint) {
+    @media only screen and (max-height: ($breakpoint / 16) * 1em) {
+      @content;
+    }
+  }
+  
+  @mixin maxminh($breakpoint1, $breakpoint2) {
+    @media only screen and (max-height: ($breakpoint2 / 16) * 1em) and (max-height: ($breakpoint1 / 16) * 1em) {
+      @content;
+    }
+  }
+
+
+
+
+@mixin flex_display($display,$align-items,$justify-content) {
+    display:$display;
+    align-items:$align-items;
+    justify-content:$justify-content;
+
+    
+     //@include flex_display(flex,center,space-between);//
+    //@include flex_display(flex,center,center;);//
+    //@include flex_display(flex,center,flex-end;);//
+      
+ }
+  
+ @mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+// RESPONSİVE //
+
+
+@mixin media($screensize){
+
+    @if ($screensize == xlarge){
+        @media(max-width:1200px) { @content };
+             
+    }
+
+    @if ($screensize == large){
+        @media(max-width:992px) { @content };
+             
+    }
+
+    @if ($screensize == medium){
+        @media(max-width:768px) { @content };
+             
+    }
+
+    @if ($screensize == small){
+        @media(max-width:576px) { @content };
+             
+    }
+}
+ 
